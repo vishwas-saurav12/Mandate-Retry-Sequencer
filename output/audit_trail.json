@@ -1,0 +1,1250 @@
+[
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0001",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0002",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0003",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0003",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0003",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0004",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0004",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0004",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0005",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0005",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0005",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0005",
+    "attemptNumber": 4,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SEND_GRACE_PERIOD_WARNING",
+      "reasonCode": "ATTEMPTS_EXHAUSTED",
+      "explanation": "Reached 4/4 attempts (1 original + 3 retries), the NPCI-allowed maximum. Issuing a 3-day grace period warning before closing the cycle."
+    },
+    "outcomeNote": "Grace period warning sent (simulated) — cycle will close if no manual action."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0006",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0007",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0008",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0009",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.909Z",
+    "mandateId": "MID-0010",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0010",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0010",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0010",
+    "attemptNumber": 4,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SEND_GRACE_PERIOD_WARNING",
+      "reasonCode": "ATTEMPTS_EXHAUSTED",
+      "explanation": "Reached 4/4 attempts (1 original + 3 retries), the NPCI-allowed maximum. Issuing a 3-day grace period warning before closing the cycle."
+    },
+    "outcomeNote": "Grace period warning sent (simulated) — cycle will close if no manual action."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0011",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (BANK_TECHNICAL_ERROR)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0011",
+    "attemptNumber": 2,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0012",
+    "attemptNumber": 1,
+    "diagnosis": "MANDATE_REVOKED",
+    "decision": {
+      "action": "ESCALATE_TO_HUMAN",
+      "reasonCode": "MANDATE_REVOKED",
+      "explanation": "Mandate was revoked by the customer or bank — no retry is valid. Escalating for manual follow-up (e.g. re-registration outreach)."
+    },
+    "outcomeNote": "Escalated to human support queue (simulated)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0013",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0014",
+    "attemptNumber": 1,
+    "diagnosis": "MANDATE_REVOKED",
+    "decision": {
+      "action": "ESCALATE_TO_HUMAN",
+      "reasonCode": "MANDATE_REVOKED",
+      "explanation": "Mandate was revoked by the customer or bank — no retry is valid. Escalating for manual follow-up (e.g. re-registration outreach)."
+    },
+    "outcomeNote": "Escalated to human support queue (simulated)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0015",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0016",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0016",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0017",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0018",
+    "attemptNumber": 1,
+    "diagnosis": "UNKNOWN",
+    "decision": {
+      "action": "ESCALATE_TO_HUMAN",
+      "reasonCode": "UNKNOWN_FAILURE",
+      "explanation": "Failure reason could not be classified. Escalating rather than retrying blind against an unknown cause."
+    },
+    "outcomeNote": "Escalated to human support queue (simulated)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0019",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0019",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0019",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0020",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0021",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0021",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0022",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0022",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0023",
+    "attemptNumber": 1,
+    "diagnosis": "MANDATE_REVOKED",
+    "decision": {
+      "action": "ESCALATE_TO_HUMAN",
+      "reasonCode": "MANDATE_REVOKED",
+      "explanation": "Mandate was revoked by the customer or bank — no retry is valid. Escalating for manual follow-up (e.g. re-registration outreach)."
+    },
+    "outcomeNote": "Escalated to human support queue (simulated)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0024",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (LIMIT_BREACH)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0024",
+    "attemptNumber": 2,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0025",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0026",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0026",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0026",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0027",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0028",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0029",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0029",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0030",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0030",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0031",
+    "attemptNumber": 1,
+    "diagnosis": "PIN_REAUTH_REQUIRED",
+    "decision": {
+      "action": "SEND_USER_REMINDER",
+      "reasonCode": "PIN_REAUTH_REQUIRED",
+      "explanation": "Failure requires user-side action (re-authentication) that the agent cannot perform on the user's behalf. Sending a targeted reminder instead of a doomed automatic retry."
+    },
+    "outcomeNote": "User reminder sent (simulated) — awaiting user-side action."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0032",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0032",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0032",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0033",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (BANK_TECHNICAL_ERROR)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0033",
+    "attemptNumber": 2,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (BANK_TECHNICAL_ERROR)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0033",
+    "attemptNumber": 3,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 failed (BANK_TECHNICAL_ERROR)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0033",
+    "attemptNumber": 4,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SEND_GRACE_PERIOD_WARNING",
+      "reasonCode": "ATTEMPTS_EXHAUSTED",
+      "explanation": "Reached 4/4 attempts (1 original + 3 retries), the NPCI-allowed maximum. Issuing a 3-day grace period warning before closing the cycle."
+    },
+    "outcomeNote": "Grace period warning sent (simulated) — cycle will close if no manual action."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0034",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0035",
+    "attemptNumber": 1,
+    "diagnosis": "MANDATE_REVOKED",
+    "decision": {
+      "action": "ESCALATE_TO_HUMAN",
+      "reasonCode": "MANDATE_REVOKED",
+      "explanation": "Mandate was revoked by the customer or bank — no retry is valid. Escalating for manual follow-up (e.g. re-registration outreach)."
+    },
+    "outcomeNote": "Escalated to human support queue (simulated)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0036",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0037",
+    "attemptNumber": 1,
+    "diagnosis": "PIN_REAUTH_REQUIRED",
+    "decision": {
+      "action": "SEND_USER_REMINDER",
+      "reasonCode": "PIN_REAUTH_REQUIRED",
+      "explanation": "Failure requires user-side action (re-authentication) that the agent cannot perform on the user's behalf. Sending a targeted reminder instead of a doomed automatic retry."
+    },
+    "outcomeNote": "User reminder sent (simulated) — awaiting user-side action."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0038",
+    "attemptNumber": 1,
+    "diagnosis": "UNKNOWN",
+    "decision": {
+      "action": "ESCALATE_TO_HUMAN",
+      "reasonCode": "UNKNOWN_FAILURE",
+      "explanation": "Failure reason could not be classified. Escalating rather than retrying blind against an unknown cause."
+    },
+    "outcomeNote": "Escalated to human support queue (simulated)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0039",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0039",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0040",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0041",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0042",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0043",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0044",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0045",
+    "attemptNumber": 1,
+    "diagnosis": "PIN_REAUTH_REQUIRED",
+    "decision": {
+      "action": "SEND_USER_REMINDER",
+      "reasonCode": "PIN_REAUTH_REQUIRED",
+      "explanation": "Failure requires user-side action (re-authentication) that the agent cannot perform on the user's behalf. Sending a targeted reminder instead of a doomed automatic retry."
+    },
+    "outcomeNote": "User reminder sent (simulated) — awaiting user-side action."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0046",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0047",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (LIMIT_BREACH)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0047",
+    "attemptNumber": 2,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0048",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0048",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0048",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0049",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0050",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0051",
+    "attemptNumber": 1,
+    "diagnosis": "MANDATE_REVOKED",
+    "decision": {
+      "action": "ESCALATE_TO_HUMAN",
+      "reasonCode": "MANDATE_REVOKED",
+      "explanation": "Mandate was revoked by the customer or bank — no retry is valid. Escalating for manual follow-up (e.g. re-registration outreach)."
+    },
+    "outcomeNote": "Escalated to human support queue (simulated)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0052",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0052",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0052",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0053",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0054",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0055",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0055",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0055",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0055",
+    "attemptNumber": 4,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SEND_GRACE_PERIOD_WARNING",
+      "reasonCode": "ATTEMPTS_EXHAUSTED",
+      "explanation": "Reached 4/4 attempts (1 original + 3 retries), the NPCI-allowed maximum. Issuing a 3-day grace period warning before closing the cycle."
+    },
+    "outcomeNote": "Grace period warning sent (simulated) — cycle will close if no manual action."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0056",
+    "attemptNumber": 1,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (BANK_TECHNICAL_ERROR)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0056",
+    "attemptNumber": 2,
+    "diagnosis": "BANK_TECHNICAL_ERROR",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "BANK_TECHNICAL_ERROR",
+      "explanation": "Diagnosis (BANK_TECHNICAL_ERROR) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0057",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0057",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0057",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0058",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0058",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0058",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0058",
+    "attemptNumber": 4,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SEND_GRACE_PERIOD_WARNING",
+      "reasonCode": "ATTEMPTS_EXHAUSTED",
+      "explanation": "Reached 4/4 attempts (1 original + 3 retries), the NPCI-allowed maximum. Issuing a 3-day grace period warning before closing the cycle."
+    },
+    "outcomeNote": "Grace period warning sent (simulated) — cycle will close if no manual action."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0059",
+    "attemptNumber": 1,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (LIMIT_BREACH)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0059",
+    "attemptNumber": 2,
+    "diagnosis": "LIMIT_BREACH",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "LIMIT_BREACH",
+      "explanation": "Diagnosis (LIMIT_BREACH) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 succeeded — cycle recovered."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0060",
+    "attemptNumber": 1,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #2 24h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #2 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0060",
+    "attemptNumber": 2,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #3 72h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #3 failed (INSUFFICIENT_FUNDS)."
+  },
+  {
+    "timestamp": "2026-09-01T18:00:33.910Z",
+    "mandateId": "MID-0060",
+    "attemptNumber": 3,
+    "diagnosis": "INSUFFICIENT_FUNDS",
+    "decision": {
+      "action": "SCHEDULE_RETRY",
+      "reasonCode": "INSUFFICIENT_FUNDS",
+      "explanation": "Diagnosis (INSUFFICIENT_FUNDS) is auto-retryable. Scheduling retry #4 168h from now, per spaced retry policy (24h / 72h / 168h) — never firing retries back-to-back."
+    },
+    "outcomeNote": "Retry #4 succeeded — cycle recovered."
+  }
+]

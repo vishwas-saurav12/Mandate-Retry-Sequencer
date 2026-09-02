@@ -1,0 +1,10 @@
+{
+  "totalCycles": 60,
+  "recovered": 45,
+  "escalated": 7,
+  "awaitingUser": 8,
+  "failedTerminal": 0,
+  "recoveredAmountInr": 553478,
+  "atRiskAmountInr": 794265,
+  "recoveryRatePct": 75
+}

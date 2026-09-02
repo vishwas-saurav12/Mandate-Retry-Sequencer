@@ -1,0 +1,24 @@
+{
+  "name": "mandate-retry-sequencer",
+  "version": "0.1.0",
+  "description": "AI Revenue Recovery — UPI Autopay / e-mandate retry sequencer (Track 03)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "generate-data": "ts-node src/data/generateDataset.ts",
+    "run-batch": "ts-node src/runBatch.ts",
+    "report": "ts-node src/generateReport.ts",
+    "test": "ts-node src/runTests.ts",
+    "compare-baseline": "ts-node src/compareBaselines.ts",
+    "audit": "ts-node src/queryAudit.ts"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.14.9"
+  }
+}

@@ -1,0 +1,962 @@
+[
+  {
+    "mandate": {
+      "mandateId": "MID-0001",
+      "customerId": "CUST-1001",
+      "amountInr": 6555,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T21:36:32.158Z",
+      "mandateCreatedAt": "2025-06-01T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T21:36:32.158Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0002",
+      "customerId": "CUST-1002",
+      "amountInr": 4034,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T07:19:43.612Z",
+      "mandateCreatedAt": "2025-09-23T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T07:19:43.612Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0003",
+      "customerId": "CUST-1003",
+      "amountInr": 12802,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T20:31:54.536Z",
+      "mandateCreatedAt": "2025-07-24T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T20:31:54.536Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0004",
+      "customerId": "CUST-1004",
+      "amountInr": 9987,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T07:24:08.883Z",
+      "mandateCreatedAt": "2025-09-30T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T07:24:08.883Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0005",
+      "customerId": "CUST-1005",
+      "amountInr": 17292,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T17:11:10.005Z",
+      "mandateCreatedAt": "2025-10-09T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T17:11:10.005Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0006",
+      "customerId": "CUST-1006",
+      "amountInr": 2773,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-31T04:41:53.040Z",
+      "mandateCreatedAt": "2025-07-05T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-31T04:41:53.040Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0007",
+      "customerId": "CUST-1007",
+      "amountInr": 12235,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T14:39:57.010Z",
+      "mandateCreatedAt": "2025-11-30T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T14:39:57.010Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0008",
+      "customerId": "CUST-1008",
+      "amountInr": 638,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T01:21:25.140Z",
+      "mandateCreatedAt": "2026-07-06T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T01:21:25.140Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0009",
+      "customerId": "CUST-1009",
+      "amountInr": 9398,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T18:32:46.226Z",
+      "mandateCreatedAt": "2026-04-18T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T18:32:46.226Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0010",
+      "customerId": "CUST-1010",
+      "amountInr": 33280,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T15:56:11.045Z",
+      "mandateCreatedAt": "2026-04-21T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T15:56:11.045Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0011",
+      "customerId": "CUST-1011",
+      "amountInr": 9602,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T09:27:49.265Z",
+      "mandateCreatedAt": "2025-08-26T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T09:27:49.265Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0012",
+      "customerId": "CUST-1012",
+      "amountInr": 13690,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T23:24:34.835Z",
+      "mandateCreatedAt": "2025-12-28T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T23:24:34.835Z",
+      "succeeded": false,
+      "failureReason": "MANDATE_REVOKED"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0013",
+      "customerId": "CUST-1013",
+      "amountInr": 327,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T00:37:39.875Z",
+      "mandateCreatedAt": "2026-02-02T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T00:37:39.875Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0014",
+      "customerId": "CUST-1014",
+      "amountInr": 18215,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T16:38:38.145Z",
+      "mandateCreatedAt": "2025-08-06T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T16:38:38.145Z",
+      "succeeded": false,
+      "failureReason": "MANDATE_REVOKED"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0015",
+      "customerId": "CUST-1015",
+      "amountInr": 21787,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-31T00:12:41.603Z",
+      "mandateCreatedAt": "2025-11-14T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-31T00:12:41.603Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0016",
+      "customerId": "CUST-1016",
+      "amountInr": 35198,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T02:14:03.317Z",
+      "mandateCreatedAt": "2025-04-30T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T02:14:03.317Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0017",
+      "customerId": "CUST-1017",
+      "amountInr": 8685,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T15:49:47.940Z",
+      "mandateCreatedAt": "2026-02-21T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T15:49:47.940Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0018",
+      "customerId": "CUST-1018",
+      "amountInr": 12241,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T11:16:13.763Z",
+      "mandateCreatedAt": "2025-08-18T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T11:16:13.763Z",
+      "succeeded": false,
+      "failureReason": "UNKNOWN"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0019",
+      "customerId": "CUST-1019",
+      "amountInr": 7951,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T20:33:26.522Z",
+      "mandateCreatedAt": "2026-03-06T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T20:33:26.522Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0020",
+      "customerId": "CUST-1020",
+      "amountInr": 11417,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T07:10:52.297Z",
+      "mandateCreatedAt": "2025-05-06T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T07:10:52.297Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0021",
+      "customerId": "CUST-1021",
+      "amountInr": 20049,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T19:56:50.555Z",
+      "mandateCreatedAt": "2025-04-02T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T19:56:50.555Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0022",
+      "customerId": "CUST-1022",
+      "amountInr": 3313,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T22:34:33.647Z",
+      "mandateCreatedAt": "2026-01-07T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T22:34:33.647Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0023",
+      "customerId": "CUST-1023",
+      "amountInr": 3079,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T14:20:01.887Z",
+      "mandateCreatedAt": "2025-09-21T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T14:20:01.887Z",
+      "succeeded": false,
+      "failureReason": "MANDATE_REVOKED"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0024",
+      "customerId": "CUST-1024",
+      "amountInr": 29253,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T12:15:14.044Z",
+      "mandateCreatedAt": "2026-05-27T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T12:15:14.044Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0025",
+      "customerId": "CUST-1025",
+      "amountInr": 10719,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T10:24:29.177Z",
+      "mandateCreatedAt": "2025-09-17T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T10:24:29.177Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0026",
+      "customerId": "CUST-1026",
+      "amountInr": 8796,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-31T03:43:16.481Z",
+      "mandateCreatedAt": "2025-11-29T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-31T03:43:16.481Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0027",
+      "customerId": "CUST-1027",
+      "amountInr": 40293,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T13:50:35.541Z",
+      "mandateCreatedAt": "2026-03-08T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T13:50:35.541Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0028",
+      "customerId": "CUST-1028",
+      "amountInr": 3280,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T06:32:56.094Z",
+      "mandateCreatedAt": "2025-03-22T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T06:32:56.094Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0029",
+      "customerId": "CUST-1029",
+      "amountInr": 2559,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T11:03:23.385Z",
+      "mandateCreatedAt": "2025-10-25T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T11:03:23.385Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0030",
+      "customerId": "CUST-1030",
+      "amountInr": 6124,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T13:51:58.325Z",
+      "mandateCreatedAt": "2025-08-23T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T13:51:58.325Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0031",
+      "customerId": "CUST-1031",
+      "amountInr": 26956,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T03:46:28.633Z",
+      "mandateCreatedAt": "2025-11-26T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T03:46:28.633Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0032",
+      "customerId": "CUST-1032",
+      "amountInr": 3489,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T14:36:46.255Z",
+      "mandateCreatedAt": "2026-02-19T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T14:36:46.255Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0033",
+      "customerId": "CUST-1033",
+      "amountInr": 3280,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T14:55:02.017Z",
+      "mandateCreatedAt": "2026-05-08T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T14:55:02.017Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0034",
+      "customerId": "CUST-1034",
+      "amountInr": 4618,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T20:01:51.559Z",
+      "mandateCreatedAt": "2026-07-11T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T20:01:51.559Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0035",
+      "customerId": "CUST-1035",
+      "amountInr": 5570,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T15:02:18.319Z",
+      "mandateCreatedAt": "2025-08-10T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T15:02:18.319Z",
+      "succeeded": false,
+      "failureReason": "MANDATE_REVOKED"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0036",
+      "customerId": "CUST-1036",
+      "amountInr": 2319,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T13:39:43.136Z",
+      "mandateCreatedAt": "2025-05-24T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T13:39:43.136Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0037",
+      "customerId": "CUST-1037",
+      "amountInr": 31254,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T15:14:08.010Z",
+      "mandateCreatedAt": "2026-05-20T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T15:14:08.010Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0038",
+      "customerId": "CUST-1038",
+      "amountInr": 5710,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T06:23:02.512Z",
+      "mandateCreatedAt": "2025-11-01T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T06:23:02.512Z",
+      "succeeded": false,
+      "failureReason": "UNKNOWN"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0039",
+      "customerId": "CUST-1039",
+      "amountInr": 45012,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-31T02:40:17.994Z",
+      "mandateCreatedAt": "2025-07-25T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-31T02:40:17.994Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0040",
+      "customerId": "CUST-1040",
+      "amountInr": 7394,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T06:24:36.297Z",
+      "mandateCreatedAt": "2025-08-28T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T06:24:36.297Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0041",
+      "customerId": "CUST-1041",
+      "amountInr": 37606,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T01:13:45.544Z",
+      "mandateCreatedAt": "2025-06-09T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T01:13:45.544Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0042",
+      "customerId": "CUST-1042",
+      "amountInr": 6535,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T13:14:09.680Z",
+      "mandateCreatedAt": "2025-05-19T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T13:14:09.680Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0043",
+      "customerId": "CUST-1043",
+      "amountInr": 37408,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T22:43:24.450Z",
+      "mandateCreatedAt": "2026-02-17T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T22:43:24.450Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0044",
+      "customerId": "CUST-1044",
+      "amountInr": 387,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T19:08:04.225Z",
+      "mandateCreatedAt": "2026-06-19T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T19:08:04.225Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0045",
+      "customerId": "CUST-1045",
+      "amountInr": 46281,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T23:01:57.647Z",
+      "mandateCreatedAt": "2025-12-11T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T23:01:57.647Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0046",
+      "customerId": "CUST-1046",
+      "amountInr": 2103,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T08:49:57.928Z",
+      "mandateCreatedAt": "2026-07-08T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T08:49:57.928Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0047",
+      "customerId": "CUST-1047",
+      "amountInr": 10415,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T20:35:44.141Z",
+      "mandateCreatedAt": "2025-06-30T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T20:35:44.141Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0048",
+      "customerId": "CUST-1048",
+      "amountInr": 7556,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T07:57:54.415Z",
+      "mandateCreatedAt": "2025-12-22T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T07:57:54.415Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0049",
+      "customerId": "CUST-1049",
+      "amountInr": 4879,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T05:46:45.599Z",
+      "mandateCreatedAt": "2026-02-28T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T05:46:45.599Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0050",
+      "customerId": "CUST-1050",
+      "amountInr": 7740,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T09:00:53.687Z",
+      "mandateCreatedAt": "2025-10-31T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T09:00:53.687Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0051",
+      "customerId": "CUST-1051",
+      "amountInr": 153,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-31T02:40:25.272Z",
+      "mandateCreatedAt": "2026-05-19T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-31T02:40:25.272Z",
+      "succeeded": false,
+      "failureReason": "MANDATE_REVOKED"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0052",
+      "customerId": "CUST-1052",
+      "amountInr": 30564,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T14:33:35.275Z",
+      "mandateCreatedAt": "2025-11-23T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T14:33:35.275Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0053",
+      "customerId": "CUST-1053",
+      "amountInr": 5436,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T02:55:32.117Z",
+      "mandateCreatedAt": "2026-04-08T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T02:55:32.117Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0054",
+      "customerId": "CUST-1054",
+      "amountInr": 14016,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T15:46:24.943Z",
+      "mandateCreatedAt": "2025-07-22T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T15:46:24.943Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0055",
+      "customerId": "CUST-1055",
+      "amountInr": 11690,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-31T02:15:06.714Z",
+      "mandateCreatedAt": "2025-11-10T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-31T02:15:06.714Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0056",
+      "customerId": "CUST-1056",
+      "amountInr": 957,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T21:55:06.543Z",
+      "mandateCreatedAt": "2026-03-23T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T21:55:06.543Z",
+      "succeeded": false,
+      "failureReason": "BANK_TECHNICAL_ERROR"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0057",
+      "customerId": "CUST-1057",
+      "amountInr": 14164,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T13:47:01.734Z",
+      "mandateCreatedAt": "2026-07-21T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T13:47:01.734Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0058",
+      "customerId": "CUST-1058",
+      "amountInr": 12096,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T08:40:25.403Z",
+      "mandateCreatedAt": "2025-11-06T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T08:40:25.403Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0059",
+      "customerId": "CUST-1059",
+      "amountInr": 24819,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-29T09:06:12.096Z",
+      "mandateCreatedAt": "2025-11-15T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-29T09:06:12.096Z",
+      "succeeded": false,
+      "failureReason": "LIMIT_BREACH"
+    }
+  },
+  {
+    "mandate": {
+      "mandateId": "MID-0060",
+      "customerId": "CUST-1060",
+      "amountInr": 8286,
+      "billingCycleId": "CYC-2026-08",
+      "originalDebitDate": "2026-08-30T06:17:11.870Z",
+      "mandateCreatedAt": "2025-06-22T06:00:00.000Z"
+    },
+    "firstFailure": {
+      "attemptNumber": 1,
+      "attemptedAt": "2026-08-30T06:17:11.870Z",
+      "succeeded": false,
+      "failureReason": "INSUFFICIENT_FUNDS"
+    }
+  }
+]

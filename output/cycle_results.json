@@ -1,0 +1,362 @@
+[
+  {
+    "mandateId": "MID-0001",
+    "amountInr": 6555,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0002",
+    "amountInr": 4034,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0003",
+    "amountInr": 12802,
+    "status": "RECOVERED",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0004",
+    "amountInr": 9987,
+    "status": "RECOVERED",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0005",
+    "amountInr": 17292,
+    "status": "AWAITING_USER",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0006",
+    "amountInr": 2773,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0007",
+    "amountInr": 12235,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0008",
+    "amountInr": 638,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0009",
+    "amountInr": 9398,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0010",
+    "amountInr": 33280,
+    "status": "AWAITING_USER",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0011",
+    "amountInr": 9602,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0012",
+    "amountInr": 13690,
+    "status": "ESCALATED",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0013",
+    "amountInr": 327,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0014",
+    "amountInr": 18215,
+    "status": "ESCALATED",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0015",
+    "amountInr": 21787,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0016",
+    "amountInr": 35198,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0017",
+    "amountInr": 8685,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0018",
+    "amountInr": 12241,
+    "status": "ESCALATED",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0019",
+    "amountInr": 7951,
+    "status": "RECOVERED",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0020",
+    "amountInr": 11417,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0021",
+    "amountInr": 20049,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0022",
+    "amountInr": 3313,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0023",
+    "amountInr": 3079,
+    "status": "ESCALATED",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0024",
+    "amountInr": 29253,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0025",
+    "amountInr": 10719,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0026",
+    "amountInr": 8796,
+    "status": "RECOVERED",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0027",
+    "amountInr": 40293,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0028",
+    "amountInr": 3280,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0029",
+    "amountInr": 2559,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0030",
+    "amountInr": 6124,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0031",
+    "amountInr": 26956,
+    "status": "AWAITING_USER",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0032",
+    "amountInr": 3489,
+    "status": "RECOVERED",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0033",
+    "amountInr": 3280,
+    "status": "AWAITING_USER",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0034",
+    "amountInr": 4618,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0035",
+    "amountInr": 5570,
+    "status": "ESCALATED",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0036",
+    "amountInr": 2319,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0037",
+    "amountInr": 31254,
+    "status": "AWAITING_USER",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0038",
+    "amountInr": 5710,
+    "status": "ESCALATED",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0039",
+    "amountInr": 45012,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0040",
+    "amountInr": 7394,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0041",
+    "amountInr": 37606,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0042",
+    "amountInr": 6535,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0043",
+    "amountInr": 37408,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0044",
+    "amountInr": 387,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0045",
+    "amountInr": 46281,
+    "status": "AWAITING_USER",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0046",
+    "amountInr": 2103,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0047",
+    "amountInr": 10415,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0048",
+    "amountInr": 7556,
+    "status": "RECOVERED",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0049",
+    "amountInr": 4879,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0050",
+    "amountInr": 7740,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0051",
+    "amountInr": 153,
+    "status": "ESCALATED",
+    "attempts": 1
+  },
+  {
+    "mandateId": "MID-0052",
+    "amountInr": 30564,
+    "status": "RECOVERED",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0053",
+    "amountInr": 5436,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0054",
+    "amountInr": 14016,
+    "status": "RECOVERED",
+    "attempts": 2
+  },
+  {
+    "mandateId": "MID-0055",
+    "amountInr": 11690,
+    "status": "AWAITING_USER",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0056",
+    "amountInr": 957,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0057",
+    "amountInr": 14164,
+    "status": "RECOVERED",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0058",
+    "amountInr": 12096,
+    "status": "AWAITING_USER",
+    "attempts": 4
+  },
+  {
+    "mandateId": "MID-0059",
+    "amountInr": 24819,
+    "status": "RECOVERED",
+    "attempts": 3
+  },
+  {
+    "mandateId": "MID-0060",
+    "amountInr": 8286,
+    "status": "RECOVERED",
+    "attempts": 4
+  }
+]

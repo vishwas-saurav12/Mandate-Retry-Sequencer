@@ -1,0 +1,18 @@
+{
+  "naiveBaseline": {
+    "totalCycles": 60,
+    "recovered": 24,
+    "recoveryRatePct": 40,
+    "recoveredAmountInr": 356249,
+    "atRiskAmountInr": 794265
+  },
+  "smartSequencer": {
+    "totalCycles": 60,
+    "recovered": 45,
+    "recoveryRatePct": 75,
+    "recoveredAmountInr": 553478,
+    "atRiskAmountInr": 794265
+  },
+  "upliftPct": 35,
+  "upliftAmountInr": 197229
+}
