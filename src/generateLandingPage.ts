@@ -1,0 +1,335 @@
+import * as fs from "fs";
+import * as path from "path";
+
+/**
+ * Generates a single-page, plain-English dashboard summarizing the
+ * project and its results — for a general audience (judges skimming
+ * quickly, not just engineers). Written to docs/index.html so it can be
+ * hosted directly via GitHub Pages (Settings -> Pages -> Deploy from
+ * branch -> /docs), giving a real shareable URL with no server needed.
+ *
+ * This is deliberately different from generateReport.ts: that one is a
+ * technical data dashboard (tables, filters) for someone auditing the
+ * details. This one leads with plain-language explanation and a handful
+ * of big, legible numbers — built to be understood in under a minute.
+ */
+
+interface BatchSummary {
+  totalCycles: number;
+  recovered: number;
+  escalated: number;
+  awaitingUser: number;
+  failedTerminal: number;
+  recoveredAmountInr: number;
+  atRiskAmountInr: number;
+  recoveryRatePct: number;
+}
+
+interface ComparisonData {
+  naiveBaseline: { recoveryRatePct: number; recoveredAmountInr: number };
+  smartSequencer: { recoveryRatePct: number; recoveredAmountInr: number };
+  upliftPct: number;
+  upliftAmountInr: number;
+}
+
+function loadJSON<T>(filePath: string, label: string): T {
+  if (!fs.existsSync(filePath)) {
+    console.error(`Missing ${filePath}. Run "npm run run-batch" and "npm run compare-baseline" first.`);
+    process.exit(1);
+  }
+  return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+}
+
+function inr(n: number): string {
+  return "\u20B9" + n.toLocaleString("en-IN");
+}
+
+function main() {
+  const outDir = path.join(__dirname, "..", "output");
+  const docsDir = path.join(__dirname, "..", "docs");
+  const summary = loadJSON<BatchSummary>(path.join(outDir, "batch_summary.json"), "batch summary");
+  const comparison = loadJSON<ComparisonData>(path.join(outDir, "baseline_comparison.json"), "baseline comparison");
+
+  const maxBar = Math.max(comparison.naiveBaseline.recoveryRatePct, comparison.smartSequencer.recoveryRatePct);
+  const naiveBarPct = Math.round((comparison.naiveBaseline.recoveryRatePct / maxBar) * 100);
+  const smartBarPct = Math.round((comparison.smartSequencer.recoveryRatePct / maxBar) * 100);
+
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mandate Retry Sequencer — AI Revenue Recovery</title>
+<style>
+  :root {
+    --bg: #17140f;
+    --panel: #211d16;
+    --panel2: #241f16;
+    --border: #3a3327;
+    --text: #f2ede2;
+    --muted: #b3aa99;
+    --accent: #e0a458;
+    --good: #5fbf8f;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* --- Hero --- */
+  .hero { padding: 72px 0 48px; text-align: center; }
+  .eyebrow { color: var(--accent); font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; margin-bottom: 14px; }
+  .hero h1 { font-size: clamp(30px, 5vw, 46px); margin: 0 0 16px; line-height: 1.15; }
+  .hero p.lead { color: var(--muted); font-size: 18px; max-width: 620px; margin: 0 auto; }
+  .hero-stat { display: inline-block; margin-top: 40px; }
+  .hero-stat .num { font-size: 64px; font-weight: 700; color: var(--good); line-height: 1; }
+  .hero-stat .label { color: var(--muted); font-size: 14px; margin-top: 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 26px; margin: 0 0 12px; }
+  .section-lead { color: var(--muted); font-size: 16px; max-width: 620px; margin-bottom: 36px; }
+
+  /* --- Problem --- */
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 640px) { .problem-grid { grid-template-columns: 1fr; } }
+  .problem-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; }
+  .problem-card .tag { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; margin-bottom: 8px; }
+  .problem-card.bad .tag { color: #e07a5f; }
+  .problem-card.good .tag { color: var(--good); }
+  .problem-card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  /* --- Pipeline --- */
+  .pipeline { display: flex; flex-direction: column; gap: 0; }
+  .step { display: flex; gap: 20px; padding: 20px 0; position: relative; }
+  .step:not(:last-child)::after {
+    content: ""; position: absolute; left: 23px; top: 56px; bottom: -20px; width: 2px; background: var(--border);
+  }
+  .step-num {
+    flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background: var(--panel2);
+    border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+    font-weight: 700; color: var(--accent); font-size: 18px;
+  }
+  .step-body h3 { margin: 8px 0 6px; font-size: 17px; }
+  .step-body p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  /* --- Stats grid --- */
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 640px) { .stats-grid { grid-template-columns: 1fr 1fr; } }
+  .stat-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-align: center; }
+  .stat-card .num { font-size: 30px; font-weight: 700; }
+  .stat-card .num.accent { color: var(--accent); }
+  .stat-card .num.good { color: var(--good); }
+  .stat-card .label { color: var(--muted); font-size: 12px; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+  /* --- Comparison --- */
+  .compare-wrap { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
+  .compare-row { margin-bottom: 22px; }
+  .compare-row:last-child { margin-bottom: 0; }
+  .compare-label { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 8px; }
+  .compare-label .name { color: var(--muted); }
+  .compare-label .value { font-weight: 700; }
+  .bar-track { background: #141210; border-radius: 8px; height: 28px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 8px; display: flex; align-items: center; padding-left: 12px; font-size: 13px; font-weight: 700; color: #17140f; }
+  .bar-fill.naive { background: #e0a458aa; }
+  .bar-fill.smart { background: var(--good); }
+  .uplift-banner {
+    margin-top: 24px; padding: 16px 20px; background: rgba(95,191,143,0.12); border: 1px solid rgba(95,191,143,0.3);
+    border-radius: 10px; text-align: center; font-size: 16px;
+  }
+  .uplift-banner strong { color: var(--good); }
+
+  /* --- Rules --- */
+  .rules-list { display: grid; gap: 14px; }
+  .rule-item { display: flex; gap: 14px; align-items: flex-start; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+  .rule-item .icon { font-size: 20px; }
+  .rule-item .txt strong { display: block; margin-bottom: 3px; }
+  .rule-item .txt span { color: var(--muted); font-size: 14px; }
+
+  footer { padding: 48px 0 64px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow">Track 03 · AI Revenue Recovery</div>
+    <h1>Mandate Retry Sequencer</h1>
+    <p class="lead">
+      An AI agent that recovers failed UPI Autopay payments — not by
+      retrying blindly, but by figuring out <em>why</em> a payment failed
+      and responding the right way, within India's actual payment rules.
+    </p>
+    <div class="hero-stat">
+      <div class="num">${summary.recoveryRatePct}%</div>
+      <div class="label">of failed payments recovered</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>The problem, in plain terms</h2>
+    <p class="section-lead">
+      When a recurring payment fails, most systems just try again a few
+      times and hope. That wastes attempts on payments that were never
+      going to succeed, and misses the ones that would have — if given
+      the right amount of time and the right response.
+    </p>
+    <div class="problem-grid">
+      <div class="problem-card bad">
+        <div class="tag">✕ The usual approach</div>
+        <p>Retry immediately, a few times, the same way — regardless of why it failed.</p>
+      </div>
+      <div class="problem-card good">
+        <div class="tag">✓ What this agent does</div>
+        <p>Diagnose the real cause, then respond with a retry, a reminder, or human escalation — whichever actually fits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="section-lead">Five steps, every time a payment fails — fully automatic, fully logged.</p>
+    <div class="pipeline">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Detect</h3>
+          <p>A recurring payment fails to go through.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Diagnose</h3>
+          <p>The agent figures out why: not enough balance, a bank glitch, a limit breach, or the customer cancelled the payment altogether.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Decide</h3>
+          <p>Based on the cause, it picks the right response — never more than what India's payment rules allow.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Act</h3>
+          <p>It retries at the right time, sends a reminder, or hands it to a person — whichever fits.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Record</h3>
+          <p>Every decision is logged in plain language, so anyone can see exactly what happened and why.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Results on a test batch</h2>
+    <p class="section-lead">60 simulated failed payments, run through the full agent.</p>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="num good">${summary.recoveryRatePct}%</div>
+        <div class="label">Recovered</div>
+      </div>
+      <div class="stat-card">
+        <div class="num accent">${inr(summary.recoveredAmountInr)}</div>
+        <div class="label">Money recovered</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">${inr(summary.atRiskAmountInr)}</div>
+        <div class="label">Total at risk</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">${summary.totalCycles}</div>
+        <div class="label">Payments tested</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Does the "smart" part actually help?</h2>
+    <p class="section-lead">
+      We tested it head-to-head against a simple retry-a-few-times approach,
+      on the exact same batch of payments.
+    </p>
+    <div class="compare-wrap">
+      <div class="compare-row">
+        <div class="compare-label"><span class="name">Simple retry (no diagnosis)</span><span class="value">${comparison.naiveBaseline.recoveryRatePct}%</span></div>
+        <div class="bar-track"><div class="bar-fill naive" style="width:${naiveBarPct}%">${comparison.naiveBaseline.recoveryRatePct}%</div></div>
+      </div>
+      <div class="compare-row">
+        <div class="compare-label"><span class="name">This agent</span><span class="value">${comparison.smartSequencer.recoveryRatePct}%</span></div>
+        <div class="bar-track"><div class="bar-fill smart" style="width:${smartBarPct}%">${comparison.smartSequencer.recoveryRatePct}%</div></div>
+      </div>
+      <div class="uplift-banner">
+        Diagnosing the failure and timing retries properly recovers
+        <strong>+${comparison.upliftPct} percentage points</strong> more —
+        worth an extra <strong>${inr(comparison.upliftAmountInr)}</strong> on this batch alone.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>It plays by the rules</h2>
+    <p class="section-lead">India's UPI Autopay system has real limits on retries. This agent never exceeds them.</p>
+    <div class="rules-list">
+      <div class="rule-item">
+        <div class="icon">🔒</div>
+        <div class="txt"><strong>Never more than 4 attempts</strong><span>1 original try plus 3 retries — the maximum NPCI allows. No exceptions, ever.</span></div>
+      </div>
+      <div class="rule-item">
+        <div class="icon">⏱️</div>
+        <div class="txt"><strong>Retries are properly spaced</strong><span>24 hours, then 3 days, then a week — giving the customer real time to fix the issue, instead of spamming them.</span></div>
+      </div>
+      <div class="rule-item">
+        <div class="icon">🙅</div>
+        <div class="txt"><strong>Cancelled payments are never retried</strong><span>If a customer has revoked a payment, the agent hands it straight to a person instead of retrying something that can't succeed.</span></div>
+      </div>
+      <div class="rule-item">
+        <div class="icon">📋</div>
+        <div class="txt"><strong>Every decision is explained</strong><span>Nothing happens silently — every action the agent takes is logged with the reason behind it.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Built for Track 03 — AI Revenue Recovery ·
+    <a href="https://github.com/vishwas-saurav12/Mandate-Retry-Sequencer" target="_blank" rel="noopener">View the code on GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>`;
+
+  fs.mkdirSync(docsDir, { recursive: true });
+  const outPath = path.join(docsDir, "index.html");
+  fs.writeFileSync(outPath, html);
+  console.log(`Wrote landing page -> ${outPath}`);
+  console.log("Enable GitHub Pages (Settings -> Pages -> Deploy from branch -> /docs) to host it live.");
+}
+
+main();

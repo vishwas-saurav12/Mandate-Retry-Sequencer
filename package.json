@@ -12,7 +12,8 @@
     "report": "ts-node src/generateReport.ts",
     "test": "ts-node src/runTests.ts",
     "compare-baseline": "ts-node src/compareBaselines.ts",
-    "audit": "ts-node src/queryAudit.ts"
+    "audit": "ts-node src/queryAudit.ts",
+    "landing-page": "ts-node src/generateLandingPage.ts"
   },
   "license": "MIT",
   "dependencies": {},
