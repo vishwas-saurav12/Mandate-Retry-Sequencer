@@ -149,24 +149,3 @@ npm run audit -- MID-0012                      # full decision history for one m
 npm run audit -- --action ESCALATE_TO_HUMAN    # filter by action
 npm run audit -- --reason MANDATE_REVOKED      # filter by reason code
 ```
-
-Useful for live Q&A during a demo — look up any specific case in seconds
-instead of scrolling through raw JSON.
-
-## Status
-
-- [x] Domain types
-- [x] NPCI-derived rule constants
-- [x] Diagnosis step
-- [x] Decision step (bounded, capped, auditable)
-- [x] Simulated executor
-- [x] Audit trail
-- [x] End-to-end wiring verified on a smoke test
-- [x] Synthetic dataset (60 records, seeded/reproducible)
-- [x] Batch run + measured recovery-rate report
-- [x] Time-aware retry outcome modeling
-- [x] Unit tests (16, zero-dependency harness)
-- [x] Baseline comparison (naive blind retry vs diagnosis+spacing)
-- [x] Audit trail query CLI
-- [ ] CI (GitHub Actions) — parked for later
-- [ ] Write-up / demo polish — **next step**
